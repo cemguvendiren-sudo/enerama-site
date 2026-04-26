@@ -48,4 +48,4 @@ public/             Static assets served as-is
 
 ## Verified numbers
 
-27 commissioned projects · 3 countries (USA, Switzerland, Türkiye) · 4 offices (incl. Baku representation) · 350+ units · 2,830 kW installed · 14 years field-proven · 0 critical failures · founded 2011
+27 commissioned projects · 3 countries (USA, Switzerland, Türkiye) · 4 offices (incl. Baku representation) · 350+ units · 2,830 kW installed · 14 years field-proven · 0 critical failures · founded 2011 
