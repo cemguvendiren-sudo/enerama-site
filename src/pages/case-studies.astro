@@ -1,0 +1,195 @@
+---
+import MainLayout from '../layouts/main.astro';
+
+const cases = [
+  {
+    sector: 'Agriculture & Greenhouses',
+    image: 'https://cdn.prod.website-files.com/69c9538c5e6a6b66c71a24ee/69d117810996930916542c84_Resim%201.jpg',
+    alt: 'Large-scale agricultural Dragon deployment',
+    title: 'Large-Scale Greenhouse Deployment',
+    location: 'Multi-hectare facility · Türkiye',
+    challenge: 'Year-round production of temperature-sensitive crops under extreme summer humidity. Conventional HVAC caused fungal pressure and could not hold stable VPD.',
+    solution: 'Dragon Climate Control system sized for multi-hectare coverage. Water recovered from air redirected to irrigation loop. Mekasera SCADA for centralized multi-zone monitoring.',
+    results: [
+      { metric: '30–60%', label: 'Energy reduction vs prior HVAC' },
+      { metric: 'Zero', label: 'Fungal loss events since commissioning' },
+      { metric: '24/7', label: 'Continuous operation under demanding conditions' },
+    ],
+  },
+  {
+    sector: 'Food Processing',
+    image: 'https://cdn.prod.website-files.com/69c9538c5e6a6b66c71a24ee/69d11780f5f44fb45ee850d8_IMG-20201203-WA0001.jpg',
+    alt: 'Industrial food drying facility',
+    title: 'Industrial Food Drying Facility',
+    location: 'Production plant · Switzerland',
+    challenge: 'Energy-intensive drying process with inconsistent product quality due to humidity fluctuations. Product spoilage from mold in humid cycles drove loss rates above tolerance.',
+    solution: 'Dragon Liquid Desiccant system precisely controlling drying-chamber dew point. Natural pathogen elimination on contact — no chemical fogging required for sanitation.',
+    results: [
+      { metric: '40–65%', label: 'Drying energy reduction' },
+      { metric: 'Consistent', label: 'Product quality across production runs' },
+      { metric: 'Water', label: 'Recovered as byproduct of drying' },
+    ],
+  },
+  {
+    sector: 'Industrial Manufacturing',
+    image: 'https://cdn.prod.website-files.com/69c9538c5e6a6b66c71a24ee/69d11782b05a7f49fdd94aa1_IMG-20201202-WA0001.jpg',
+    alt: 'Industrial facility field operations',
+    title: 'Precision Manufacturing Climate Control',
+    location: 'Production facility · USA',
+    challenge: 'Product dimensional tolerances compromised by humidity swings. Worker comfort and corrosion protection demanded consistent RH year-round. Conventional HVAC consumed more than 50% of total facility energy.',
+    solution: 'Dragon platform providing independent temperature and humidity control. Integration with plant-wide waste-heat recovery system for desiccant regeneration.',
+    results: [
+      { metric: '35–55%', label: 'Climate control energy reduction' },
+      { metric: 'Stable', label: 'Humidity within manufacturing tolerances' },
+      { metric: '14 yrs', label: 'Field-proven across the platform fleet' },
+    ],
+  },
+];
+---
+
+<MainLayout
+  title="Case Studies | Real-World Dragon Deployments"
+  description="27 commissioned Dragon Liquid Desiccant projects across USA, Switzerland, and Türkiye. 14 years field-proven. Real performance data from greenhouses, food processing, and industrial manufacturing."
+  keywords="dragon case studies, enerama projects, liquid desiccant deployments, industrial HVAC case studies, greenhouse climate control results"
+  canonicalPath="/case-studies"
+>
+  <!-- Hero -->
+  <section class="relative text-white py-20" style="background-color: #0B3D4C;">
+    <div class="absolute inset-0 opacity-20" style="background-image: url('https://cdn.prod.website-files.com/69c9538c5e6a6b66c71a24ee/69d1177b013256053a0448c7_IMG-20201202-WA0000.jpg'); background-size: cover; background-position: center;"></div>
+    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl">
+        <div class="inline-block px-4 py-2 rounded-full mb-6 text-sm font-medium" style="background-color: rgba(255,255,255,0.15);">
+          27 Projects · 3 Countries · 14 Years
+        </div>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-balance">
+          Real Projects. Real Performance.
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-200 max-w-3xl">
+          Dragon deployments across agriculture, food processing, and industrial manufacturing. Commissioned, monitored, and delivered by Enerama's in-house engineering team.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Inside a Dragon Installation -->
+  <section class="bg-white">
+    <div class="w-full">
+      <a
+        href="https://youtu.be/awp1OJAuBsU"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Inside a Dragon Installation — opens YouTube video"
+        class="relative block group overflow-hidden"
+      >
+        <img
+          src="https://cdn.prod.website-files.com/69c9538c5e6a6b66c71a24ee/69d1177b013256053a0448c7_IMG-20201202-WA0000.jpg"
+          alt="Inside a Dragon Installation — walkthrough video"
+          class="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-105"
+          onerror="this.onerror=null;this.src='https://cdn.prod.website-files.com/69c9538c5e6a6b66c71a24ee/69d11780f5f44fb45ee850d8_IMG-20201203-WA0001.jpg';"
+        />
+        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors flex items-center justify-center">
+          <div class="text-center text-white">
+            <div class="w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4 shadow-2xl group-hover:scale-110 transition-transform" style="background-color: #E07B39;">
+              <svg class="w-8 h-8 ml-1" fill="white" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </div>
+            <div class="text-2xl md:text-3xl font-bold drop-shadow-lg">Inside a Dragon Installation</div>
+            <div class="text-sm opacity-90 mt-1">Watch on YouTube</div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Case Studies -->
+  <section class="bg-white py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="space-y-16">
+        {cases.map((c, idx) => (
+          <article class={`grid grid-cols-1 lg:grid-cols-2 gap-10 items-center ${idx % 2 === 1 ? 'lg:[&>*:first-child]:order-2' : ''}`}>
+            <div>
+              <img src={c.image} alt={c.alt} class="w-full h-auto rounded-lg shadow-xl" />
+            </div>
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-wider mb-2" style="color: #E07B39;">
+                {c.sector}
+              </div>
+              <h2 class="text-3xl font-bold mb-2" style="color: #1B3A6B;">{c.title}</h2>
+              <p class="text-sm text-gray-500 mb-6">{c.location}</p>
+
+              <div class="space-y-5 mb-6">
+                <div>
+                  <div class="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-1">Challenge</div>
+                  <p class="text-gray-700 leading-relaxed">{c.challenge}</p>
+                </div>
+                <div>
+                  <div class="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-1">Solution</div>
+                  <p class="text-gray-700 leading-relaxed">{c.solution}</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-3 gap-4 pt-4 border-t border-gray-200">
+                {c.results.map((r) => (
+                  <div>
+                    <div class="text-xl font-bold mb-1" style="color: #0D7377;">{r.metric}</div>
+                    <div class="text-xs text-gray-600">{r.label}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Stats -->
+  <section class="py-20" style="background-color: #1B3A6B;">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Portfolio at a Glance</h2>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
+        <div><div class="text-4xl font-bold text-white">27</div><div class="text-sm text-gray-300 mt-1">Projects Commissioned</div></div>
+        <div><div class="text-4xl font-bold text-white">350+</div><div class="text-sm text-gray-300 mt-1">Units Deployed</div></div>
+        <div><div class="text-4xl font-bold text-white">2,830 kW</div><div class="text-sm text-gray-300 mt-1">Installed Power</div></div>
+        <div><div class="text-4xl font-bold text-white">11,792 L/h</div><div class="text-sm text-gray-300 mt-1">Water Extraction</div></div>
+        <div><div class="text-4xl font-bold" style="color: #10B981;">14</div><div class="text-sm text-gray-300 mt-1">Years Field-Proven</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Confidentiality Note -->
+  <section class="bg-gray-50 py-16">
+    <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+      <div class="bg-white p-8 rounded-lg border-l-4 shadow-sm" style="border-color: #0D7377;">
+        <h3 class="text-xl font-bold mb-3" style="color: #1B3A6B;">
+          Want Specific Project References?
+        </h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          Detailed project documentation — including client names, facility specifications, exact performance data, and before/after telemetry — is available under NDA for qualified investors, strategic partners, and serious prospects. Reference site visits can be arranged subject to client confidentiality.
+        </p>
+        <a href="/contact" class="inline-flex items-center font-semibold hover:opacity-80 transition-opacity" style="color: #E07B39;">
+          Request Detailed Case Studies →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-white py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6" style="color: #1B3A6B;">
+        Could Dragon Deliver These Results in Your Facility?
+      </h2>
+      <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+        Share your facility details — our engineering team will model expected performance for your specific conditions.
+      </p>
+      <a href="/contact" class="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white rounded-lg shadow-lg hover:opacity-90 transition-opacity" style="background-color: #E07B39;">
+        Request Performance Modeling
+      </a>
+    </div>
+  </section>
+</MainLayout>

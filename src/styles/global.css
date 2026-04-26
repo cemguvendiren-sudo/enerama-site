@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    color: #1F2937;
+    background-color: #FFFFFF;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  /* Step 1 — Sticky header guarantee:
+     Avoid overflow-hidden on root containers, which silently breaks
+     position: sticky on descendants in some browsers. */
+  html,
+  body {
+    overflow-x: clip;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Step 6 — Card title word-break protection:
+     Prevents long words like "Commissioning" or "Post-Commissioning"
+     from breaking mid-word inside narrow card containers across
+     all pages (timelines, feature cards, stat cards, etc.). */
+  .no-break {
+    word-break: keep-all;
+    overflow-wrap: normal;
+    hyphens: none;
+  }
+
+  .no-break-tight {
+    word-break: keep-all;
+    overflow-wrap: normal;
+    hyphens: none;
+    white-space: nowrap;
+  }
+}

@@ -1,0 +1,284 @@
+---
+import MainLayout from '../layouts/main.astro';
+
+const mainProducts = [
+  {
+    tag: 'Core Platform',
+    title: 'Dragon Climate Control',
+    subtitle: 'Liquid Desiccant System',
+    image: 'https://cdn.prod.website-files.com/69c9538c5e6a6b66c71a24ee/69d25e996be64ade38667754_Dragon%20Climate%20Control.jpg',
+    alt: 'Dragon Climate Control unit with Liquid Desiccant technology',
+    description: 'The flagship Dragon system controls temperature and humidity independently — without traditional compressor-based refrigeration. Delivers 30–70% energy savings vs conventional HVAC, extracts 100+ liters/hour of water from air, and naturally eliminates airborne pathogens on contact with Liquid Desiccant solution.',
+    specs: [
+      { label: 'Capacity', value: 'Custom — 7,000 to 780,000 m³/h airflow' },
+      { label: 'Energy savings', value: '30–70% vs conventional HVAC' },
+      { label: 'Water recovery', value: 'Up to 100+ L/h per unit' },
+      { label: 'Operating life', value: '14 years field-proven' },
+    ],
+    cta: { href: '/technology', label: 'Explore Technology →' },
+  },
+  {
+    tag: 'Next Generation · Pre-Commercial',
+    title: 'Dragon Solar TES',
+    subtitle: 'Thermal Energy Storage Module',
+    image: 'https://cdn.prod.website-files.com/69c9538c5e6a6b66c71a24ee/69d3627316b44cc26b595c06_Dragon%20Solar%20TES.png',
+    alt: 'Dragon Solar TES thermal energy storage module',
+    description: "The next evolution of the Dragon platform. Stores daytime solar thermal energy in insulated tanks and releases it at night — enabling fully renewable 24/7 Dragon operation for the first time.",
+    specs: [
+      { label: 'Status', value: 'Pre-commercial development' },
+      { label: 'PCT Patent', value: 'Filed Q1 2026' },
+      { label: 'Heat source', value: 'Flat-plate solar collectors' },
+      { label: 'Target', value: '100% renewable Dragon operation' },
+    ],
+    badge: 'PCT Patent Filed Q1 2026',
+  },
+  {
+    tag: 'Vertical Farming',
+    title: 'Pyramid Garden',
+    subtitle: 'HP Aeroponics Vertical Farming System',
+    image: 'https://cdn.prod.website-files.com/69c9538c5e6a6b66c71a24ee/69d367a61d8826674140c87a_Pyramid%20Garden.jpg',
+    alt: 'Pyramid Garden vertical farming system with aeroponics',
+    description: 'Modular vertical farming towers using high-pressure aeroponics. Stackable design for maximum space efficiency. Integrated LED lighting and automated nutrient delivery. Designed to integrate with Dragon climate control.',
+    specs: [
+      { label: 'Technology', value: 'HP Aeroponics' },
+      { label: 'Format', value: 'Vertical towers, modular' },
+      { label: 'Lighting', value: 'Integrated LED grow lights' },
+      { label: 'Applications', value: 'Leafy greens, herbs, microgreens' },
+    ],
+  },
+  {
+    tag: 'Agriculture',
+    title: 'Aethor',
+    subtitle: 'Controlled Atmosphere Bio-Production Platform',
+    image: 'https://cdn.prod.website-files.com/69c9538c5e6a6b66c71a24ee/69d113bdf49caa7d35bba23e_Resim%202.jpg',
+    alt: 'Aethor controlled atmosphere bio-production platform',
+    description: 'Beyond agriculture — pure technology. Soilless growing with Dragon-integrated environmental control for commercial greenhouses and indoor farms.',
+    specs: [
+      { label: 'Technology', value: 'HP Aeroponics / soilless growing' },
+      { label: 'Climate', value: 'Dragon-integrated environmental control' },
+      { label: 'Scale', value: 'Commercial greenhouse and indoor farm' },
+      { label: 'Applications', value: 'Vegetables, fruits, specialty crops' },
+    ],
+  },
+  {
+    tag: 'Energy',
+    title: 'Mobile Hybrid Energy Station',
+    subtitle: 'Portable Energy & Climate Solution',
+    image: 'https://cdn.prod.website-files.com/69c9538c5e6a6b66c71a24ee/69d11780960bc6bd18b73970_Resim%203.jpg',
+    alt: 'Mobile Hybrid Energy Station with solar and wind power',
+    description: 'Solar tracking-enabled mobile hybrid energy (solar + wind) station combining renewable energy generation with Dragon climate control. Deployable in remote or off-grid locations. Provides both energy supply and climate-controlled environment in a single mobile unit.',
+    specs: [
+      { label: 'Mobility', value: 'Containerized, transportable' },
+      { label: 'Energy', value: 'Hybrid (solar + wind) renewable + backup' },
+      { label: 'Climate', value: 'Integrated Dragon system' },
+      { label: 'Applications', value: 'Remote sites, disaster relief, off-grid operations' },
+    ],
+  },
+  {
+    tag: 'Monitoring',
+    title: 'Mekasera SCADA',
+    subtitle: 'Control & Monitoring System',
+    image: 'https://cdn.prod.website-files.com/69c9538c5e6a6b66c71a24ee/69d36875825fa5322e5999f4_Mekasera%20module.png',
+    alt: 'Mekasera SCADA remote monitoring control module',
+    description: 'Real-time monitoring, remote control, and data analytics platform for all Enerama systems. Cloud-connected with mobile access.',
+    specs: [
+      { label: 'Platform', value: 'Web + mobile app' },
+      { label: 'Features', value: 'Real-time monitoring, alerts, analytics' },
+      { label: 'Connectivity', value: 'Cloud-based, remote access' },
+      { label: 'Integration', value: 'All Dragon, Aethor & third-party systems' },
+    ],
+  },
+];
+---
+
+<MainLayout
+  title="Products | Dragon Liquid Desiccant Platform Family"
+  description="The Dragon Platform product family — Dragon Climate Control, Solar TES, Pyramid Garden, Aethor, Mobile Hybrid Energy Station, and Mekasera SCADA. PCT patented Liquid Desiccant technology."
+  keywords="dragon climate control, solar TES, pyramid garden, aethor, mobile hybrid energy, mekasera SCADA, liquid desiccant products"
+  canonicalPath="/products"
+>
+  <!-- Hero -->
+  <section class="relative text-white py-20" style="background-color: #0B3D4C;">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl">
+        <div class="inline-block px-4 py-2 rounded-full mb-6 text-sm font-medium" style="background-color: rgba(255,255,255,0.15);">
+          Engineered · Field-Proven · PCT Patented
+        </div>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-balance">
+          The Dragon™ Platform Product Family
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-200 max-w-3xl">
+          Every Enerama product is custom-engineered for your specific environment. No off-the-shelf systems — complete solutions designed, built, and commissioned by our team.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- One Platform -->
+  <section class="bg-white py-16">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4" style="color: #1B3A6B;">
+          One Platform. Multiple Systems.
+        </h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          All Dragon products share the same patented Liquid Desiccant core — proven across 27 projects on 3 continents
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 rounded-lg bg-gray-50 text-center">
+          <h3 class="text-lg font-bold mb-2" style="color: #1B3A6B;">Patented Liquid Desiccant Core</h3>
+          <p class="text-gray-600 text-sm">The hygroscopic heart of every Dragon system. Field-proven since 2011.</p>
+        </div>
+        <div class="p-6 rounded-lg bg-gray-50 text-center">
+          <h3 class="text-lg font-bold mb-2" style="color: #1B3A6B;">Full EPC Delivery</h3>
+          <p class="text-gray-600 text-sm">Every product delivered as a complete, commissioned system.</p>
+        </div>
+        <div class="p-6 rounded-lg bg-gray-50 text-center">
+          <h3 class="text-lg font-bold mb-2" style="color: #1B3A6B;">Mekasera SCADA Control</h3>
+          <p class="text-gray-600 text-sm">Proprietary remote monitoring and control across all products.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Range -->
+  <section class="py-20" style="background-color: #F9FAFB;">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4" style="color: #1B3A6B;">Our Product Range</h2>
+      </div>
+
+      <div class="space-y-16">
+        {mainProducts.map((product, idx) => (
+          <div class={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${idx % 2 === 1 ? 'lg:[&>*:first-child]:order-2' : ''}`}>
+            <div class="relative">
+              <img
+                src={product.image}
+                alt={product.alt}
+                class="w-full h-auto rounded-lg shadow-xl"
+              />
+              {product.badge && (
+                <div class="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold text-white shadow-lg" style="background-color: #E07B39;">
+                  {product.badge}
+                </div>
+              )}
+            </div>
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-wider mb-2" style="color: #E07B39;">
+                {product.tag}
+              </div>
+              <h3 class="text-3xl md:text-4xl font-bold mb-2" style="color: #1B3A6B;">{product.title}</h3>
+              <p class="text-lg text-gray-600 mb-4">{product.subtitle}</p>
+              <p class="text-base text-gray-700 leading-relaxed mb-6">{product.description}</p>
+
+              <dl class="space-y-3 mb-6">
+                {product.specs.map((spec) => (
+                  <div class="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-3 pb-3 border-b border-gray-200">
+                    <dt class="text-sm font-semibold flex-shrink-0 sm:w-40" style="color: #0D7377;">{spec.label}:</dt>
+                    <dd class="text-sm text-gray-700 flex-1">{spec.value}</dd>
+                  </div>
+                ))}
+              </dl>
+
+              {product.cta && (
+                <a
+                  href={product.cta.href}
+                  class="inline-flex items-center font-semibold hover:opacity-80 transition-opacity"
+                  style="color: #E07B39;"
+                >
+                  {product.cta.label}
+                </a>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Complementary Systems -->
+  <section class="bg-white py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4" style="color: #1B3A6B;">Complementary Systems</h2>
+        <p class="text-xl text-gray-600">Additional Dragon ecosystem products</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-lg border-2 border-gray-200 hover:border-[#0D7377] transition-colors">
+          <h3 class="text-xl font-bold mb-3" style="color: #1B3A6B;">Dragon CO₂ Generator</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Controlled CO₂ enrichment system for agricultural and greenhouse applications. Integrates with Dragon climate control for optimized plant growth environments.
+          </p>
+        </div>
+        <div class="p-6 rounded-lg border-2 border-gray-200 hover:border-[#0D7377] transition-colors">
+          <h3 class="text-xl font-bold mb-3" style="color: #1B3A6B;">Dragon Chillers</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            High-efficiency chiller systems complementing the Dragon Liquid Desiccant platform. For applications requiring combined dehumidification and active cooling.
+          </p>
+        </div>
+        <div class="p-6 rounded-lg border-2 border-gray-200 hover:border-[#0D7377] transition-colors">
+          <h3 class="text-xl font-bold mb-3" style="color: #1B3A6B;">Custom EPC Solutions</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Every Enerama project is unique. We engineer complete custom climate solutions for requirements that go beyond our standard product range.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Selection Table -->
+  <section class="py-20" style="background-color: #F9FAFB;">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4" style="color: #1B3A6B;">
+          Which System Is Right for You?
+        </h2>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full bg-white rounded-lg shadow-sm">
+          <thead>
+            <tr style="background-color: #1B3A6B;">
+              <th class="px-6 py-4 text-left text-white font-semibold">Application</th>
+              <th class="px-6 py-4 text-left text-white font-semibold">Recommended System</th>
+              <th class="px-6 py-4 text-left text-white font-semibold">Key Benefit</th>
+              <th class="px-6 py-4 text-left text-white font-semibold">Scale</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200">
+            <tr><td class="px-6 py-4 font-semibold text-gray-900">Greenhouse / Agriculture</td><td class="px-6 py-4 text-gray-700">Dragon Climate Control</td><td class="px-6 py-4 text-gray-700">VPD + pathogen control</td><td class="px-6 py-4 text-gray-700">Small to large</td></tr>
+            <tr><td class="px-6 py-4 font-semibold text-gray-900">Vertical Farming</td><td class="px-6 py-4 text-gray-700">Pyramid Garden</td><td class="px-6 py-4 text-gray-700">HP Aeroponics + climate integration</td><td class="px-6 py-4 text-gray-700">Modular</td></tr>
+            <tr><td class="px-6 py-4 font-semibold text-gray-900">Food Drying / Processing</td><td class="px-6 py-4 text-gray-700">Dragon Climate Control</td><td class="px-6 py-4 text-gray-700">Precise RH + energy savings</td><td class="px-6 py-4 text-gray-700">Industrial</td></tr>
+            <tr><td class="px-6 py-4 font-semibold text-gray-900">Data Centers</td><td class="px-6 py-4 text-gray-700">Dragon Climate Control</td><td class="px-6 py-4 text-gray-700">Independent temp/humidity</td><td class="px-6 py-4 text-gray-700">Enterprise</td></tr>
+            <tr><td class="px-6 py-4 font-semibold text-gray-900">Pharmaceuticals</td><td class="px-6 py-4 text-gray-700">Dragon Climate Control</td><td class="px-6 py-4 text-gray-700">Pathogen elimination + precision</td><td class="px-6 py-4 text-gray-700">Regulated</td></tr>
+            <tr><td class="px-6 py-4 font-semibold text-gray-900">Remote / Off-grid</td><td class="px-6 py-4 text-gray-700">Mobile Hybrid Energy Station</td><td class="px-6 py-4 text-gray-700">Self-contained energy + climate</td><td class="px-6 py-4 text-gray-700">Portable</td></tr>
+            <tr><td class="px-6 py-4 font-semibold text-gray-900">Multi-site monitoring</td><td class="px-6 py-4 text-gray-700">Mekasera SCADA</td><td class="px-6 py-4 text-gray-700">Centralized visibility</td><td class="px-6 py-4 text-gray-700">Any scale</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-white py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6" style="color: #1B3A6B;">
+        Need Help Choosing the Right System?
+      </h2>
+      <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+        Our engineering team will assess your facility and recommend the optimal Dragon configuration for your requirements.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact" class="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white rounded-lg shadow-lg hover:opacity-90 transition-opacity" style="background-color: #E07B39;">
+          Request Engineering Consultation
+        </a>
+        <a href="/technology" class="inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-lg border-2 hover:opacity-90 transition-opacity" style="border-color: #1B3A6B; color: #1B3A6B;">
+          Technology Deep-Dive
+        </a>
+      </div>
+    </div>
+  </section>
+</MainLayout>

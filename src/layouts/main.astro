@@ -1,0 +1,65 @@
+---
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import '../styles/fonts.css';
+import '../styles/global.css';
+
+export interface Props {
+  title: string;
+  description?: string;
+  keywords?: string;
+  ogImage?: string;
+  ogType?: string;
+  canonicalPath?: string;
+}
+
+const {
+  title,
+  description = 'Enerama Environmental Technologies — PCT patented Liquid Desiccant climate platform. 14 years field-proven. 27 projects across 3 countries.',
+  keywords = 'enerama, environmental technologies, liquid desiccant, climate control, HVAC, EPC, dragon system, energy efficiency, water recovery, sustainable technology',
+  ogImage = 'https://cdn.prod.website-files.com/69c9538c5e6a6b66c71a24ee/69d1177f0cee0ec71a5731d1_20200704_143032.jpg',
+  ogType = 'website',
+  canonicalPath = '',
+} = Astro.props;
+
+const siteUrl = 'https://enerama.com';
+const canonical = `${siteUrl}${canonicalPath}`;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <link rel="canonical" href={canonical} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content={ogType} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:url" content={canonical} />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <meta name="robots" content="index, follow" />
+
+    <link rel="icon" type="image/jpeg" href="https://cdn.prod.website-files.com/69c9538c5e6a6b66c71a24ee/69c992866f0ef04c0f6599ed_Enerama.jpg" />
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <Header client:load />
+    <main class="flex-1">
+      <slot />
+    </main>
+    <Footer client:load />
+  </body>
+</html>
