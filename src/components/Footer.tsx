@@ -13,7 +13,7 @@ export default function Footer() {
               className="h-10 w-auto mb-4 bg-white p-1 rounded"
             />
             <p className="text-gray-400 text-sm leading-relaxed mb-4 max-w-md">
-              Environmental Technologies delivering sustainable climate control solutions worldwide. PCT patented Liquid Desiccant platform — 14 years field-proven, 27 projects across 3 countries.
+              Environmental Technologies delivering sustainable climate control solutions worldwide. PCT patented Liquid Desiccant platform — 14 years field-proven, 27 projects.
             </p>
             <div className="flex space-x-4">
               <a

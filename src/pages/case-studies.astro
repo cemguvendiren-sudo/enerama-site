@@ -13,7 +13,7 @@ const cases = [
     results: [
       { metric: '30–60%', label: 'Energy reduction vs prior HVAC' },
       { metric: 'Zero', label: 'Fungal loss events since commissioning' },
-      { metric: '24/7', label: 'Continuous operation under demanding conditions' },
+      { metric: '24/7', label: 'Continuous operation' },
     ],
   },
   {
@@ -41,7 +41,7 @@ const cases = [
     results: [
       { metric: '35–55%', label: 'Climate control energy reduction' },
       { metric: 'Stable', label: 'Humidity within manufacturing tolerances' },
-      { metric: '14 yrs', label: 'Field-proven across the platform fleet' },
+      { metric: '14 yrs', label: 'Continuous operation across platform fleet' },
     ],
   },
 ];
@@ -49,7 +49,7 @@ const cases = [
 
 <MainLayout
   title="Case Studies | Real-World Dragon Deployments"
-  description="27 commissioned Dragon Liquid Desiccant projects across USA, Switzerland, and Türkiye. 14 years field-proven. Real performance data from greenhouses, food processing, and industrial manufacturing."
+  description="27 commissioned Dragon Liquid Desiccant projects across USA, Switzerland, and Türkiye. Real performance data from greenhouses, food processing, and industrial manufacturing."
   keywords="dragon case studies, enerama projects, liquid desiccant deployments, industrial HVAC case studies, greenhouse climate control results"
   canonicalPath="/case-studies"
 >
@@ -71,34 +71,18 @@ const cases = [
     </div>
   </section>
 
-  <!-- Inside a Dragon Installation -->
-  <section class="bg-white">
-    <div class="w-full">
-      <a
-        href="https://youtu.be/awp1OJAuBsU"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Inside a Dragon Installation — opens YouTube video"
-        class="relative block group overflow-hidden"
-      >
-        <img
-          src="https://cdn.prod.website-files.com/69c9538c5e6a6b66c71a24ee/69d1177b013256053a0448c7_IMG-20201202-WA0000.jpg"
-          alt="Inside a Dragon Installation — walkthrough video"
-          class="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-105"
-          onerror="this.onerror=null;this.src='https://cdn.prod.website-files.com/69c9538c5e6a6b66c71a24ee/69d11780f5f44fb45ee850d8_IMG-20201203-WA0001.jpg';"
-        />
-        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors flex items-center justify-center">
-          <div class="text-center text-white">
-            <div class="w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4 shadow-2xl group-hover:scale-110 transition-transform" style="background-color: #E07B39;">
-              <svg class="w-8 h-8 ml-1" fill="white" viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z"/>
-              </svg>
-            </div>
-            <div class="text-2xl md:text-3xl font-bold drop-shadow-lg">Inside a Dragon Installation</div>
-            <div class="text-sm opacity-90 mt-1">Watch on YouTube</div>
-          </div>
+  <!-- Zero Failures Callout -->
+  <section class="py-12" style="background-color: #10B981;">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-center gap-4 text-white text-center">
+        <svg class="w-12 h-12 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+        </svg>
+        <div>
+          <div class="text-2xl md:text-3xl font-bold">14 Years Field-Proven</div>
+          <div class="text-sm md:text-base opacity-90 mt-1">A record no conventional HVAC competitor can match</div>
         </div>
-      </a>
+      </div>
     </div>
   </section>
 
@@ -151,13 +135,43 @@ const cases = [
         <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Portfolio at a Glance</h2>
       </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
         <div><div class="text-4xl font-bold text-white">27</div><div class="text-sm text-gray-300 mt-1">Projects Commissioned</div></div>
         <div><div class="text-4xl font-bold text-white">350+</div><div class="text-sm text-gray-300 mt-1">Units Deployed</div></div>
         <div><div class="text-4xl font-bold text-white">2,830 kW</div><div class="text-sm text-gray-300 mt-1">Installed Power</div></div>
         <div><div class="text-4xl font-bold text-white">11,792 L/h</div><div class="text-sm text-gray-300 mt-1">Water Extraction</div></div>
-        <div><div class="text-4xl font-bold" style="color: #10B981;">14</div><div class="text-sm text-gray-300 mt-1">Years Field-Proven</div></div>
       </div>
+    </div>
+  </section>
+
+  <!-- Inside a Dragon Installation — YouTube video link -->
+  <section class="bg-white">
+    <div class="w-full">
+      <a
+        href="https://youtu.be/awp1OJAuBsU"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Inside a Dragon Installation — opens YouTube video"
+        class="relative block group overflow-hidden"
+      >
+        <img
+          src="https://img.youtube.com/vi/awp1OJAuBsU/maxresdefault.jpg"
+          alt="Inside a Dragon Installation — walkthrough video"
+          class="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-105"
+          onerror="this.onerror=null;this.src='https://img.youtube.com/vi/awp1OJAuBsU/hqdefault.jpg';"
+        />
+        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors flex items-center justify-center">
+          <div class="text-center text-white">
+            <div class="w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4 shadow-2xl group-hover:scale-110 transition-transform" style="background-color: #E07B39;">
+              <svg class="w-8 h-8 ml-1" fill="white" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </div>
+            <div class="text-2xl md:text-3xl font-bold drop-shadow-lg">Inside a Dragon Installation</div>
+            <div class="text-sm opacity-90 mt-1">Watch on YouTube</div>
+          </div>
+        </div>
+      </a>
     </div>
   </section>
 
