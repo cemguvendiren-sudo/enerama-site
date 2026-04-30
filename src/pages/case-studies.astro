@@ -145,6 +145,31 @@ const projects = [
         </p>
       </div>
     </div>
+    <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 mt-8">
+      <a
+        href="https://youtu.be/VloJar4c_A0"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Real Facilities. Real Results. — opens YouTube video"
+        class="relative block group overflow-hidden rounded-lg"
+      >
+        <img
+          src="https://img.youtube.com/vi/VloJar4c_A0/maxresdefault.jpg"
+          alt="Real Facilities. Real Results. — Dragon installations across 3 continents"
+          class="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <div class="flex flex-col items-center gap-3 text-white drop-shadow-lg">
+            <div class="w-20 h-20 rounded-full flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform" style="background-color: #E07B39;">
+              <svg class="w-8 h-8 ml-1" fill="white" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </div>
+            <div class="text-sm opacity-90 mt-1">Watch on YouTube</div>
+          </div>
+        </div>
+      </a>
+    </div>
   </section>
 
   <!-- Selected Project Highlights -->
@@ -159,46 +184,44 @@ const projects = [
         </p>
       </div>
 
-      <div class="space-y-12 max-w-6xl mx-auto">
-        {projects.map((p, idx) => (
-          <article class="bg-white rounded-lg shadow-md overflow-hidden">
-            <div class={`grid grid-cols-1 ${p.image ? 'lg:grid-cols-2' : ''} gap-0`}>
-              {p.image && (
-                <div class={`${idx % 2 === 1 ? 'lg:order-2' : ''}`}>
-                  <img
-                    src={p.image}
-                    alt={p.alt}
-                    class="w-full h-full object-cover min-h-[300px]"
-                  />
-                </div>
-              )}
-              <div class="p-8 lg:p-10">
-                <div class="text-sm font-semibold mb-2" style="color: #E07B39;">{p.sector}</div>
-                <h3 class="text-2xl md:text-3xl font-bold mb-4" style="color: #1B3A6B;">{p.title}</h3>
-                <div class="text-sm text-gray-700 mb-2"><span class="font-semibold">Location:</span> {p.location}</div>
-                <div class="text-sm text-gray-700 mb-6"><span class="font-semibold">Scale:</span> {p.scale}</div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {projects.map((p) => (
+          <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+            {p.image && (
+              <div class="relative">
+                <img
+                  src={p.image}
+                  alt={p.alt}
+                  class="w-full h-64 object-cover"
+                />
+              </div>
+            )}
+            <div class="p-6 flex-1 flex flex-col">
+              <div class="text-sm font-semibold mb-2" style="color: #E07B39;">{p.sector}</div>
+              <h3 class="text-2xl font-bold mb-3" style="color: #1B3A6B;">{p.title}</h3>
+              <div class="text-sm text-gray-700 mb-1"><span class="font-semibold">Location:</span> {p.location}</div>
+              <div class="text-sm text-gray-700 mb-4"><span class="font-semibold">Scale:</span> {p.scale}</div>
 
-                <div class="mb-5">
-                  <div class="text-sm font-bold uppercase tracking-wider mb-2" style="color: #0D7377;">Challenge:</div>
-                  <p class="text-gray-700 leading-relaxed">{p.challenge}</p>
-                </div>
+              <div class="mb-4">
+                <div class="text-sm font-bold uppercase tracking-wider mb-2" style="color: #0D7377;">Challenge:</div>
+                <p class="text-gray-700 leading-relaxed text-sm">{p.challenge}</p>
+              </div>
 
-                <div class="mb-5">
-                  <div class="text-sm font-bold uppercase tracking-wider mb-2" style="color: #0D7377;">Dragon Solution:</div>
-                  <p class="text-gray-700 leading-relaxed">{p.solution}</p>
-                </div>
+              <div class="mb-4">
+                <div class="text-sm font-bold uppercase tracking-wider mb-2" style="color: #0D7377;">Dragon Solution:</div>
+                <p class="text-gray-700 leading-relaxed text-sm">{p.solution}</p>
+              </div>
 
-                <div>
-                  <div class="text-sm font-bold uppercase tracking-wider mb-3" style="color: #0D7377;">Results:</div>
-                  <ul class="space-y-2">
-                    {p.results.map((r) => (
-                      <li class="flex gap-3 text-gray-700">
-                        <span class="flex-shrink-0 font-bold" style="color: #0D7377;">✓</span>
-                        <span>{r}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+              <div>
+                <div class="text-sm font-bold uppercase tracking-wider mb-3" style="color: #0D7377;">Results:</div>
+                <ul class="space-y-2">
+                  {p.results.map((r) => (
+                    <li class="flex gap-3 text-gray-700 text-sm">
+                      <span class="flex-shrink-0 font-bold" style="color: #0D7377;">✓</span>
+                      <span>{r}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </article>
@@ -219,7 +242,7 @@ const projects = [
         </p>
       </div>
     </div>
-    <div class="w-full mt-8">
+    <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 mt-8">
       <a
         href="https://youtu.be/awp1OJAuBsU"
         target="_blank"
