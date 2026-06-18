@@ -17,7 +17,7 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://linkedin.com/company/enerama"
+               href="https://www.linkedin.com/company/enerama-environmental/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
@@ -28,7 +28,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://instagram.com/enerama_technologies"
+                 href="https://www.instagram.com/eneramacomtr/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
